@@ -26,8 +26,8 @@ public class FileOperator {
         if(path1.exists() && path1.isDirectory()){
             String[] lista = path1.list();
             if(lista.length == 0){
-                cons.sendMessage("Folder is empty.");
-            } else {
+                cons.sendMessage("Folder is empty.");            }
+            else {
                 for (String s : lista) {
                     cons.sendMessage(s);
                 }
