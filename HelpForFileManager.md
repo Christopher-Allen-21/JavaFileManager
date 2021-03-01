@@ -11,23 +11,25 @@
 Create object of type FileOperator.(Must pass console object in as a parameter).
 `FileOperator myFileOperator = new FileOperator(myConsole);`
 
-- list: Prompts user to enter folder path. Checks whether path exists and is a directory. Returns string of file names if the folder is not empty.
+- *list*: Prompts user to enter folder path. Checks whether path exists and is a directory. Returns string of file names if the folder is not empty.
 `myFileOperator.list("Desktop/Projects/);`
 
-- info: Prompts user for file/folder path. Returns name, absolute path, relative path, and size of file/folder.
+- *info*: Prompts user for file/folder path. Returns name, absolute path, relative path, and size of file/folder.
 `myFileOperator.info(Desktop/Projects/myFile.txt");`
 
-- mkdir: Prompts user for new folder path. Makes sure a folder with same name does not already exist. Makes sure folder name is appropriate. Creates new folder.
+- *mkdir*: Prompts user for new folder path. Makes sure a folder with same name does not already exist. Makes sure folder name is appropriate. Creates new folder.
 `myFileOperator.mkdir(Desktop/Projects/myNewFolder");`
 
-- rename: Renames file.
+- *rename*: Prompts user for path of file/folder to rename. Renames file/folder if it exists.
 `myFileOperator.rename(myFile.txt,myRenamedFile.txt);`
 
-- copy:
+- *copy*: Prompts user for file/folder to copy. Copies that file/folder if it exists.
+`myFileOperator.copy("Desktop/Projects/myFile.txt");
 
-- move:
+- *move*:Prompts user for path of file/folder to copy and move and destination path. Moves the file/folder.
+`myFileOperator.move("Desktop/Projects/myFile.txt,Desktop/");`
 
-- delete:Prompts user for path of file/folder they want to delete. Checks if file/folder exists and then deletes file/folder.
+- *delete*:Prompts user for path of file/folder they want to delete. Checks if file/folder exists and then deletes file/folder.
 `myFileOperator.delete("Desktop/Projects/myRenamedFile.txt");`
 
 - quit: Ends program.
