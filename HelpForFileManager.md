@@ -2,13 +2,13 @@
 
 
 ## Class Descriptions
-- **FileManager**: asdf
-- **FileOperator**: asdf
-- **Console**: Prompts user for String. Saves entered String to a variable. Makes String lowercase and trims whitespace. Returns formatted String.
+- **FileManager**: Prompts user for a command. Processes the command if the command is valid.
+- **FileOperator**: Used to create FileOperator object. Methods are commands used for file management.
+- **Console**: Used to create Console object that prompts user for String, saves the entered String to a variable, makes the String lowercase, trims whitespace, and returns the formatted String.
 
 ## Commands in FileManager class
 
-Create object of type FileOperator.(Must pass console object in as a parameter).\
+Create object of type FileOperator by passing in a Console object.\
 `FileOperator myFileOperator = new FileOperator(myConsole);`
 
 - *list*: Prompts user to enter folder path. Checks whether path exists and is a directory. Returns string of file names if the folder is not empty.\
@@ -24,7 +24,7 @@ Create object of type FileOperator.(Must pass console object in as a parameter).
 `myFileOperator.rename(myFile.txt,myRenamedFile.txt);`
 
 - *copy*: Prompts user for file/folder to copy. Copies that file/folder if it exists.\
-`myFileOperator.copy("Desktop/Projects/myFile.txt");
+`myFileOperator.copy("Desktop/Projects/myFile.txt");`
 
 - *move*:Prompts user for path of file/folder to copy and move and destination path. Moves the file/folder.\
 `myFileOperator.move("Desktop/Projects/myFile.txt,Desktop/");`
@@ -33,5 +33,5 @@ Create object of type FileOperator.(Must pass console object in as a parameter).
 `myFileOperator.delete("Desktop/Projects/myRenamedFile.txt");`
 
 - *quit*: Ends program.\
-`myFileOperator.quit();
+`myFileOperator.quit();`
 
